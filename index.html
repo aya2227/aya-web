@@ -1,1 +1,83 @@
-test
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+<meta charset="UTF-8">
+<!--IEで標準モードで表示させる-->
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<!--レスポンシブ-->
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<!--OGPタグ/twitterカード-->
+<meta property="og:url" content="http://aya2227.github.io/aya-web/" />
+<meta property="og:title" content="ayae | Portfolio" />
+<meta property="og:type" content="website">
+<meta property="og:description" content="ayaeのこれまでの経歴や作品を掲載しています。" />
+<meta property="og:image" content="画像URL" />
+<!--電話番号や住所が自動でリンクになるのを防ぐ　今回は使わない
+<meta name="format-detection" content="email=no,telephone=no,address=no" />
+-->
+<!-- 検索エンジンのクローラの動きを制御する -->
+<meta name="robots" content="noydir" />
+<meta name="robots" content="noodp" />
+<meta name="robots" content="index,follow" />
+<!-- ファビコン -->
+<link rel="shortcut icon" href="">
+<!--サイトアイコン
+<link rel="icon" href="画像URL" sizes="16x16" type="image/png" />
+<link rel="icon" href="画像URL" sizes="32x32" type="image/png" />
+<link rel="icon" href="画像URL" sizes="48x48" type="image/png" />
+<link rel="icon" href="画像URL" sizes="62x62" type="image/png" />
+-->
+<!--150X150スマホ用アイコン
+<link rel="apple-touch-icon-precomposed" href="画像のURL" />
+-->
+<link rel="stylesheet" href="./style.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="http://mplus-webfonts.sourceforge.jp/mplus_webfonts.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+
+<meta name="description"
+	content="ayaeのこれまでの経歴や作品を掲載しています。" />
+<title>ayae | Portfolio</title>
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/common/js/jquery.page-scroller-308.js"></script>
+<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
+
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<header class="site-header">
+  <h1>
+		<a href="http://aya2227.github.io/aya-web/" class="logo__link">
+			<img src="" class="logo__img" alt="">
+		</a>
+	</h1>
+	<nav class="global-nav">
+      <ul class="global-nav__list">
+          <li class="global-nav__item">
+						<a href="<?php bloginfo('url'); ?>/about" class="global-nav__item-inner">ぐろうあっぷについて</a>
+					</li>
+          <li class="global-nav__item">
+						<a href="<?php bloginfo('url'); ?>/service" class="global-nav__item-inner">サービス内容</a>
+					</li>
+          <li class="global-nav__item">
+						<a href="<?php bloginfo('url'); ?>/price" class="global-nav__item-inner">ご利用方法・料金</a>
+					</li>
+          <!--<li class="global-nav__item"><a href="<?php bloginfo('url'); ?>/faq" class="global-nav__item-inner">よくある質問</a></li>-->
+          <li class="global-nav__item">
+						<a href="<?php bloginfo('url'); ?>/office" class="global-nav__item-inner">事業所一覧</a>
+					</li>
+          <li class="global-nav__item">
+						<a href="<?php bloginfo('url'); ?>/contact" class="global-nav__item-inner">お問い合わせ</a>
+					</li>
+      </ul>
+  </nav>
+  <button type="button" class="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</header>
