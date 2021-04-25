@@ -165,8 +165,8 @@ section {
 }
 
 .h2-sub {
-  font-size: 12px;
-  margin: 5px 0 0;
+  display: block;
+  font-size: 13px;
   letter-spacing: .02em;
 }
 
@@ -178,6 +178,10 @@ section {
 
 .profile-img {
   margin: 0 auto;
+}
+
+.profile-img img {
+  border-radius: 50%;
 }
 picture {
   object-fit: contain;
