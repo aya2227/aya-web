@@ -6,7 +6,7 @@
   display: none;
 }
 /* --- 960px --- */
-.section-inner {
+.section__inner {
   width: 90%;
   max-width: 960px;
   margin: 0 auto;
@@ -176,17 +176,20 @@ section {
   padding: 150px 0 70px; 
 }
 
-.profile-img {
+.profile__img {
+  width: 30%;
   margin: 0 auto;
 }
 
 .profile-img img {
   border-radius: 50%;
 }
-picture {
-  object-fit: contain;
-}
 
+.profile__text {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
 /* --- section class="intro" --- */
 .intro {
   padding: 238px 0 80px;
