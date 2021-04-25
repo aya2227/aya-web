@@ -188,7 +188,7 @@ section {
 .profile__text {
   width: 60%;
   margin: 0 auto;
-  text-align: center;
+  text-align: justify;
 }
 /* --- section class="intro" --- */
 .intro {
