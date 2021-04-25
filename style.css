@@ -178,7 +178,7 @@ section {
 
 .profile__img {
   width: 30%;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 
 .profile-img img {
@@ -186,7 +186,7 @@ section {
 }
 
 .profile__text {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   text-align: center;
 }
