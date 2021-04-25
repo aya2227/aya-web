@@ -1,0 +1,1269 @@
+
+/* 共通パーツ
+
+====================================================*/
+/* --- スマホで改行 --- */
+.pc-only {
+  display: block;
+}
+.sp-only{
+  display: none;
+}
+/* --- 96０px--- */
+.inner {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* --- ヘッダー --- */
+.site-header {
+  background: #FCF5EB;
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  padding: 28px 20px;
+  position: fixed;
+  z-index: 9999;
+}
+.site-header h1 {
+  font-size: 100%;
+}
+
+.global-nav.active {
+  display: flex;
+  position: fixed;
+  z-index : 2;
+  top  : 0;
+  left : 0;
+  color: #7a6e66;
+  background: #FCF5EB;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  transition: opacity .6s ease, visibility .6s ease;
+  visibility: visible;
+  opacity: 100;
+  align-items: center;
+  justify-content: center;
+}
+
+.global-nav__list {
+    display: flex;
+}
+
+.global-nav__item {
+  font-size: 14px;
+  list-style: none;
+  transition: .4s all;
+}
+.global-nav__item:not(:last-child){
+  margin-right: 20px;
+}
+
+.global-nav__item-inner {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    color: #7a6e66;
+    text-decoration: none;
+}
+.global-nav__item-inner:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #F2B8BC;
+  transform: translate(-100%, 0);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.4s;
+  content: "";
+}
+.global-nav__item-inner:hover:after {
+  transform: translate(0, 0);
+}
+
+/* --- ハンバーガーボタン --- */
+.hamburger {
+  display: none;
+}
+.hamburger span {
+  display : block;
+  position: absolute;
+  width   : 30px;
+  height  : 2px ;
+  left    : 6px;
+  background : #7a6e66;
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition   : 0.3s ease-in-out;
+  transition        : 0.3s ease-in-out;
+}
+.hamburger span:nth-child(1) {
+  top: 10px;
+}
+.hamburger span:nth-child(2) {
+  top: 20px;
+}
+.hamburger span:nth-child(3) {
+  top: 30px;
+}
+
+/* --- ナビ開いてる時のボタン --- */
+.hamburger.active span:nth-child(1) {
+  top : 16px;
+  left: 6px;
+  background :#7a6e66;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform   : rotate(-45deg);
+  transform        : rotate(-45deg);
+}
+.hamburger.active span:nth-child(2),
+.hamburger.active span:nth-child(3) {
+  top: 16px;
+  background: #7a6e66;
+  -webkit-transform: rotate(45deg);
+  -moz-transform   : rotate(45deg);
+  transform        : rotate(45deg);
+}
+
+/* --- フッター --- */
+.site-footer {
+  padding: 66px 0 0;
+  background: rgba(255, 250, 240, 0.45);
+}
+
+.footer-innerwrap {
+  width: 95%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0 0 50px;
+  justify-content: space-evenly;
+}
+
+.footer-info {
+  width: 25%;
+}
+.footer-info h3 {
+  padding: 0 0 8px;
+  line-height: 0.5em;
+}
+.footer-info p {
+  font-size: 12px;
+}
+.footer-info a {
+  color: #7a6e66;
+}
+
+.footer-nav__list {
+  column-count: 3;
+  font-size: 13px;
+}
+
+.footer-nav__item:nth-child(7),
+.footer-nav__item:last-child {
+  margin: 0 0 0 -40px;
+}
+
+.footer-nav__item::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f054";
+  font-weight: 900;
+  color: #7a6e66;
+  padding: 0 5px 0 0;
+}
+
+.footer-nav__item-inner {
+  color: #7a6e66;
+}
+
+.footer-bottom {
+  background: #D8D2C9;
+  height: 35px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* --- back to top ボタン --- */
+#page-top {
+  position: fixed;
+  right: 45px;
+  bottom: 45px;
+  z-index: 1;
+}
+
+.page-top__link {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #FCDCAE;
+}
+
+/* --- お問い合わせエリア --- */
+.contact {
+  position: relative;
+  text-align: center;
+}
+
+.contact img {
+  width: 100%;
+  height: 348px;
+  object-fit: cover;
+}
+
+.contact__inner {
+  width: 90%;
+  max-width: 960px;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.contact__heading {
+  margin: 0 0 30px;
+}
+
+.contact__text {
+  margin: 0 0 36px;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  width: 210px;
+  padding: 20px 0;
+  background: #F2B8BC;
+  color: #fff;
+  border-radius: 30px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1.4;
+  letter-spacing: .1em;
+}
+.btn:hover {
+  background: #E98A92;
+}
+
+.arrow-icon {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  width: 10px;
+  height: 10px;
+  border-style: solid;
+  border-width: 3px 3px 0 0;
+  border-color: #fff;
+  transform: rotate(45deg);
+  margin: 0 0 0 .5em;
+}
+
+/* --- ページタイトル --- */
+.page-title {
+  background: #FCFCFC;
+  height: 160px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  line-height: 1;
+}
+
+/* --- パンくずリスト --- */
+.breadcrumbs {
+  background: #F9F9F9;
+  height: 45px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.breadcrumbs__list {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+}
+.breadcrumbs__list li:last-of-type::before {
+  content: "\003e";
+  font-size: 12px;
+  margin: 0 1em;
+}
+.breadcrumbs__list span {
+  font-size: 12px;
+}
+.breadcrumbs__list a{
+  color: #E98A92;
+}
+
+
+/* トップページ各section
+
+====================================================*/
+/* --- section class="visual" --- */
+.visual {
+  background:rgba(252, 245, 235, .45);
+}
+
+picture {
+  object-fit: contain;
+}
+
+/* --- section class="intro" --- */
+.intro {
+  padding: 238px 0 80px;
+  background:rgba(252, 245, 235, .45);
+  background-image: url("../img/bg-intro.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+.intro__inner {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-copy {
+  margin: 0 0 60px;
+}
+.main-copy__sub {
+  font-size: 18px;
+  line-height: 2.2;
+}
+
+/* --- section class="contents" --- */
+.contents {
+  background:rgba(252, 245, 235, .45);
+  padding: 70px 0;
+}
+
+.contents__inner {
+  width: 90%;
+  max-width: 960px;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0 auto;
+}
+
+.contents-list {
+  width: 30%;
+  margin: 10px;
+}
+.contents-list__title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0 0 20px;
+}
+.contents-list__image {
+  margin: 0 0 20px;
+}
+.contents-list__text {
+  text-align: center;
+  margin: 0 0 20px;
+}
+.contents__link {
+  text-align: center;
+}
+.contents__link .btn {
+  padding: 10.5px 0;
+  font-size: 14px;
+}
+
+/* --- section class="news" --- */
+.news {
+  background: #F9F9F9;
+  margin: 0 auto;
+  padding: 90px 0 70px;
+}
+
+.news__heading {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+}
+.news__heading h2 {
+  color: #C9D5A8;
+}
+
+.news__inner {
+  width: 90%;
+  max-width: 960px;
+  background: #fff;
+  margin: 0 auto;
+}
+
+.news-list__list {
+  padding: 50px;
+}
+.news-list__item {
+  display: flex;
+  padding: 25px 0;
+}
+.news-list__item:first-of-type {
+  padding: 0 0 25px;
+}
+
+time {
+  margin: 0 16px 0 0;
+  font-weight: 500;
+}
+
+.news-list__border {
+  position: relative;
+  height: 1px;
+  background-size: 6px 1px;
+  background-image: linear-gradient(to right, #D6CEB4, #D6CEB4 4px, transparent 4px, transparent 2px);
+  background-repeat: repeat-x;
+}
+
+
+/* 下層ページ
+
+====================================================*/
+/* --- ぐろうあっぷについて 運営理念--- */
+.philosophy {
+  padding: 70px 0;
+  background: rgba(252, 245, 235, .45);
+}
+.philosophy__inner {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.philosophy h3 {
+  margin: 0 0 30px;
+  color: #CBDFAA;
+}
+.philosophy__text p {
+  padding: 0 0 50px;
+  font-size: 16px;
+}
+.philosophy__text p:last-child {
+  padding: 0;
+}
+.philosophy__text span{
+  background: linear-gradient(transparent 60%, #F2B8BC 60%);
+}
+.nizi__text p {
+  font-size: 16px;
+  line-height: 3.5
+}
+
+/* --- ぐろうあっぷについて ぐろうあっぷの特徴--- */
+.feature {
+  padding: 70px 0;
+  background: #F9F9F9;
+}
+.feature__inner {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.feature__inner h3 {
+  margin: 0 0 70px;
+  color: #F2B8BC;
+}
+.feature-list {
+  display: flex;
+  margin: 0 0 50px;
+}
+.feature-list__img img {
+  height: 100%;
+}
+.feature-list__text {
+  width: 58%;
+  padding: 2em;
+}
+.feature-list__text.f-1 {
+  background: rgba(203, 223, 170, 0.4);
+}
+.feature-list__text.f-2 {
+  background: rgba(218, 235, 236, 0.4);
+}
+.feature-list__text.f-3 {
+  background: rgba(242, 184, 188, 0.26);
+}
+.feature-list__text-inner {
+  text-align: left;
+}
+.feature-list__text-inner  h4{
+  margin: 0 0 20px;
+}
+
+/* --- サービス内容　1日の流れ--- */
+.schedule {
+  padding: 70px 0;
+  background: rgba(252, 245, 235, .45);
+}
+.schedule__inner {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url("../img/bg-schedule.png");
+  background-position: top 48% right;
+}
+.schedule__inner h3 {
+  margin: 0 0 30px;
+  color: #CBDFAA;
+}
+.schedule__block {
+  width: 90%;
+  margin: 0 auto;
+  border-left: 2px solid #7a6e66;
+}
+.schedule-list {
+  display: block;
+  /* width: 50%; */
+  text-align: left;
+  padding: 20px 0 20px 2em;
+  position: relative;
+}
+.schedule-list:before {
+  content:'';
+  height: 20px;         /* 縦幅 */
+  width: 20px;          /* 横幅 */
+  display: block;
+  border-radius: 50%;   /* まん丸に表示 */
+  background: #7a6e66;
+  position:absolute;
+  top: 27%;
+  left: -11px;        /* 横位置調整 */
+}
+.schedule-list__time {
+  font-size: 20px;
+}
+/* --- サービス内容　プログラム内容--- */
+.program {
+  padding: 70px 0;
+  background: #F9F9F9;
+}
+.program__inner {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.program__inner h3 {
+  color: #F2B8BC;
+  margin: 0 0 30px;
+}
+.program-list {
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 30px auto 0;
+}
+.program-list__item {
+  background:#F2B8BC;
+  color: #FFF;
+  border-radius: 28px;
+  padding: 1em 2.5em;
+  margin: 0 0 20px;
+  min-width: 165px;
+}
+
+/* --- サービス内容　ご利用時間 --- */
+.usagetime {
+	padding: 70px 0;
+  background: rgba(252, 245, 235, .45);
+}
+.usagetime__inner {
+	width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.usagetime h3 {
+	color: #C7E9EC;
+	margin: 0 0 30px;
+}
+/*ご利用料金のtableも同じcssのため併せて表記*/
+.usagetime__table,
+.price__table {
+  width: 70%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+.usagetime__table td,
+.price__table td {
+	border: solid 1px #D6CEB4;
+}
+.usagetime__table-left,
+.price__table-left {
+  width: 30%;
+  text-align: center;
+  line-height: 1;
+  background-color: #FAF8F5;
+  padding: 1em 0;
+}
+.usagetime__table-right,
+.price__table-right {
+  background-color: #FFF;
+  padding: 1em 0 1em 2em;
+  text-align: left;
+}
+
+/* --- ご利用方法・料金　ご利用方法--- */
+.flow {
+  padding: 70px 0;
+  background: rgba(252, 245, 235, .45);
+}
+.flow__inner {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+.flow__inner h3 {
+  color: #CBDFAA;
+  margin: 0 0 30px;
+}
+.flow__item-wrap {
+  position: relative;
+  padding: 0 0 60px;
+}
+.flow__item-wrap:nth-last-of-type(3) {
+  padding: 0;
+}
+.flow__item {
+  display: flex;
+  background: #FFF;
+  padding: 1em;
+}
+.flow__item-inner {
+  width: 12%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.flow__item-number {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: #FFF;
+  text-align: center;
+  line-height: 100px;
+  font-size: 40px;
+  font-weight: 600;
+}
+.flow__item-number.n-1 {
+  background: #F2B8BC;
+}
+.flow__item-number.n-2 {
+  background: #DAEBEC;
+}
+.flow__item-number.n-3 {
+  background: #CBDFAA;
+}
+.flow__item-number.n-4 {
+  background: #FCDCAE;
+}
+.flow__item-number.n-5 {
+  background: #FCF8AE;
+}
+.flow__item-text {
+  width: 88%;
+  margin: 0 0 0 1em;
+  text-align: left;
+}
+/*背景の矢印*/
+.grid {
+	position: absolute;
+	top: 88px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+.line1 {
+	height: 70%;
+	border-right: 18px solid #A09791;
+	width: calc(50% + 9px);
+}
+.arrow{
+  position: relative;
+  width: calc(50% + 9px);
+  height: 60px;
+  border-right: 18px solid #A09791;;
+  /* box-sizing: border-box; */
+  margin-bottom: 13px;
+}
+.arrow::after{
+  content: "";
+  position: absolute;
+  bottom: -13px;
+  right: -39px;
+  border-top: 30px solid #A09791;
+  border-right: 30px solid transparent;
+  border-left: 30px solid transparent;
+}
+
+/* --- ご利用方法・料金　料金--- */
+.price {
+  padding: 70px 0;
+  background: #F9F9F9;
+}
+.price__inner {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.price__inner h3 {
+  color: #F2B8BC;
+  margin: 0 0 30px;
+}
+/*tableについては, サービス内容　ご利用時間 に併せて表記*/
+
+.price__attention {
+  text-align: left;
+  width: 70%;
+  margin: .5em auto 0;
+}
+.line {
+  margin: 50px 0;
+}
+.line img {
+  width: 45px;
+}
+.free h4 span {
+  background: linear-gradient(transparent 60%, #DAEBEC 60%);
+}
+.period {
+  margin: 20px 0 0;
+}
+.period span {
+  font-size: 18px;
+}
+.period__attention {
+  margin: 20px auto 0;
+}
+
+/* --- 事業所一覧--- */
+.info {
+  padding: 70px 0;
+  background: rgba(252, 245, 235, .45);
+}
+.info__inner {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.info__inner h3 {
+	text-align: left;
+	margin: 0 0 20px;
+	color: #FFAFBD;
+}
+.info__table {
+  width: 100%;
+  margin: 0 0 50px;
+  border-collapse: collapse;
+}
+.info__table tr {
+  height: 80px;
+  border-bottom: 1px solid rgba(214, 206, 180, 0.6);
+}
+.info__table th,
+.info__table td {
+    padding: 0 0 0 2em;
+    text-align: left;
+}
+.info__table th {
+  width: 20%;
+}
+.info__map {
+  width: 100%;
+}
+
+iframe {
+  width: 100%;
+  height: 395px;
+}
+
+/* --- お問い合わせ--- */
+.contact-form {
+  padding: 70px 0;
+  background: #FFF;
+}
+.contact-form__inner {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.attention {
+  margin: 0 0 30px;
+  text-align: left;
+}
+.contact-form__main {
+  padding: 5% 15%;
+  margin: 0 auto;
+  background: #F9F9F9;
+}
+.contact-form__item {
+  text-align: left;
+  margin: 0 0 30px;
+}
+.contact-form__item label {
+  display: block;
+  margin: 0 0 .5em;
+}
+input::placeholder {
+  color: rgba(85,85,85,0.45);
+}
+input[type=radio] {
+  margin: 0 .5em 0 0;
+}
+.contact-form__item-title {
+  font-weight: bold;
+}
+.required {
+  font-size: 12px;
+  padding: 0 0 0 .5em;
+  color: #f26262;
+}
+.form-input,
+.form-text {
+  background: #FFF;
+  border: 1px solid #707070;
+  padding: 1em;
+  width: 100%;
+}
+.or {
+  padding: 0 .5em;
+}
+.mail-tel-required {
+  color: #f26262;
+  font-weight: 700;
+}
+.mail-tel-attention {
+  margin: .5em 0 0;
+  font-size: 12px;
+}
+.contact-form__submit {
+  padding: 50px 0 0;
+}
+.btn.submit {
+  width: 250px;
+}
+input[type="submit"] {
+  border-radius: 30px;
+}
+
+/* --- お問い合わせ完了--- */
+.thanks {
+  padding: 70px 0;
+  background: #FFF;
+}
+.thanks__inner {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+}
+.thanks__title {
+  font-size: 24px;
+  margin: 0 0 30px;
+}
+.thanks__text {
+  margin: 0 auto;
+  text-align: left;
+}
+.thanks__btn {
+  padding: 50px 0 0;
+}
+.btn.return {
+  width: 250px;
+}
+/*====================================================
+Tablet Smartphone　max-width:840px
+====================================================
+*/
+/* --- ヘッダー --- */
+@media screen and (max-width:840px) {
+
+  .global-nav {
+    display: none;
+  }
+
+  .global-nav__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .global-nav__item:not(:last-child){
+    margin: 0 0 15px;
+  }
+
+  .global-nav__item-inner:after {
+    width: 0;
+    height: 0;
+    background-color: none;
+    transform: none;
+    transition: none;
+  }
+  .global-nav__item-inner:hover:after {
+    transform: none;
+  }
+
+  .hamburger {
+    display : block;
+    position: fixed;
+    z-index : 3;
+    right : 13px;
+    top   : 12px;
+    width : 40px;
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    border: none;
+    outline: none;
+    background: none;
+  }
+}
+
+
+/*====================================================
+Tablet Smartphone　max-width:768px
+====================================================
+*/
+@media screen and (max-width:768px) {
+
+  /* 共通パーツ
+
+  ====================================================*/
+  .pc-only {
+    display: none;
+  }
+  .sp-only{
+    display: block;
+  }
+
+  /* --- ヘッダー --- */
+  .site-header {
+    height: 60px;
+    padding: 17.5px 15px;
+  }
+
+  /* --- フッター --- */
+  .site-footer {
+    padding: 50px 0 0;
+  }
+
+  .footer-innerwrap {
+    display: block;
+    width: 100%;
+    padding: 0 0 30px;
+    text-align: center;
+  }
+
+  .footer-info {
+    width: 100%;
+  }
+
+  .footer-nav {
+    width: 80%;
+    margin: 10px auto 0;
+  }
+  .footer-nav__list {
+    column-count: 1;
+  }
+  .footer-nav__item:nth-child(7),
+  .footer-nav__item:last-child {
+    margin: 0;
+  }
+
+  /* --- back to top ボタン --- */
+  #page-top {
+    right: 20px;
+    bottom: 20px;
+  }
+
+/* --- お問い合わせエリア --- */
+  .contact__inner {
+    top: 60px;
+  }
+
+/* --- ページタイトル --- */
+.page-title {
+  height: 100px;
+  text-align: center;
+}
+.page-title img {
+  height: 20px;
+}
+
+/* --- パンくずリスト --- */
+.breadcrumbs {
+  height: 40px;
+}
+.breadcrumbs__list li:last-of-type::before {
+  font-size: 10px;
+}
+.breadcrumbs__list span {
+  font-size: 10px;
+}
+
+
+  /* トップページ各section
+
+  ====================================================*/
+
+  /* --- section class="intro" --- */
+  .intro {
+    padding: 70px 0 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .main-copy {
+    margin: 0px 0 40px;
+  }
+  .main-copy__sub {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  /* --- section class="contents" --- */
+  .contents__inner {
+    display: block;
+  }
+
+  .contents-list {
+    width: 80%;
+    margin: 10px auto 70px;
+  }
+  .contents-list:last-child {
+    margin-bottom: 0;
+  }
+  .contents-list__image {
+    text-align: center;
+  }
+  .contents-list__img img {
+    object-fit: contain;
+    width: 100%;
+  }
+
+/* --- section class="news"--- */
+  .news {
+    padding: 50px 0;
+  }
+  .news-list__list {
+    padding: 10px 30px 30px;
+  }
+  .news-list__item {
+    display: block;
+  }
+  .news-list__item:first-of-type {
+    padding: 25px 0;
+  }
+  /* 下層ページ
+
+  ====================================================*/
+  /* --- ぐろうあっぷについて 運営理念--- */
+  .philosophy {
+    padding: 50px 0;
+  }
+  .philosophy h3 {
+    margin: 0 0 30px;
+    color: #CBDFAA;
+  }
+  .philosophy__text p {
+    padding: 0 0 50px;
+    font-size: 15px;
+  }
+  .philosophy__text p:last-child {
+    padding: 0;
+  }
+  .nizi__text p {
+    font-size: 15px;
+    line-height: 2.5
+  }
+  /* --- ぐろうあっぷについて ぐろうあっぷの特徴--- */
+  .feature {
+    padding: 50px 0;
+  }
+  .feature__inner h3 {
+    margin: 0 0 30px;
+  }
+  .feature-list {
+    display: block;
+    width: 100%;
+    margin: 0 auto 50px;
+  }
+  .feature-list__img img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .feature-list__text {
+    width: 100%;
+  }
+
+  /* --- サービス内容　1日の流れ--- */
+  .schedule {
+    padding: 50px 0;
+    background: rgba(252, 245, 235, .45);
+  }
+  .schedule__inner {
+    background-image: url("../img/bg-schedule-sp.png");
+    background-position: top 55% right;
+  }
+
+  /* --- サービス内容　プログラム内容--- */
+  .program {
+    padding: 50px 0;
+  }
+  .program-list {
+    justify-content: end;
+  }
+  .program-list__item {
+    padding: 1em;
+    width: 50%;
+    font-size: 12px;
+    border-right: 1px solid #f9f9f9;
+  }
+  .program-list__item:nth-child(6) {
+    font-size: 10px;
+    line-height: 2.5;
+  }
+
+  /* --- サービス内容　ご利用時間--- */
+  .usagetime {
+    padding: 50px 0;
+  }
+  .usagetime__table {
+    width: 100%;
+  }
+
+  /* --- ご利用方法・料金　ご利用方法--- */
+  .flow__item {
+    display: block;
+    padding: 2em 1em 1em;
+  }
+  .flow__item-inner {
+    margin: 0 auto 1em;
+    width: 100%;
+  }
+  .flow__item-text {
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+  .flow__item-text h4 {
+    text-align: center;
+    margin: 0 0 .5em;
+  }
+
+  /* --- ご利用方法・料金　料金--- */
+  .price {
+    padding: 50px 0;
+  }
+  .price__table {
+    width: 100%;
+  }
+  .price__table-left {
+    width: 35%;
+  }
+  .price__table-right {
+    padding: 1em 0 1em 1em;
+  }
+  .price__attention {
+    width: 100%;
+  }
+  .period__attention {
+    text-align: left;
+  }
+
+  /* --- 事業所一覧--- */
+  .info {
+    padding: 50px 0;
+    background: rgba(252, 245, 235, .45);
+  }
+  .info__inner h3 {
+		margin: 0 0 10px;
+	}
+  .info__table th {
+    display: block;
+    width: 100%;
+    margin: 20px 0 0.5em;
+    padding: 0;
+  }
+  .info__table td {
+    display: block;
+    margin: 0 0 1em;
+    padding: 0;
+  }
+
+  .info__map {
+    margin: 0 auto;
+    position: relative;
+    width: 100%;
+    padding-top: 75%;
+  }
+  iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+  }
+
+  /* --- お問い合わせ--- */
+  .contact-form {
+    padding: 50px 0;
+  }
+  .attention {
+    margin: 0 0 30px;
+    text-align: left;
+  }
+  .contact-form__main {
+    padding: 5% 5% 10%;
+  }
+  .contact-form__submit {
+    padding: 0;
+  }
+
+}
+
+
+/*====================================================
+applle Smartphone　max-width:428px
+====================================================
+*/
+@media screen and (max-width:428px) {
+  /* --- スマホで改行 --- */
+  .pc-only {
+    display: none;
+  }
+  .sp-only{
+    display: block;
+  }
+}
