@@ -209,6 +209,7 @@ section {
 
 .accordion {
   width: 100%;
+  display: flex;
   position: relative;/*+マークの位置基準とするためrelative指定*/
   cursor: pointer;
 }
