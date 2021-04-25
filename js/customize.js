@@ -4,3 +4,15 @@ $('.site-header a[href*="#"]').click(function () {//全てのページ内リン�
 	$('body,html').animate({scrollTop: pos}, 500); //取得した位置にスクロール。500の数値が大きくなるほどゆっくりスクロール
 	return false;
 });
+
+//アコーディオンをクリックした時の動作
+$('.accordion').on('click', function() {//タイトル要素をクリックしたら
+	var findElm = $(this).next(".history-web");//直後のアコーディオンを行うエリアを取得し
+	$(findElm).slideToggle();//アコーディオンの上下動作
+    
+	if($(this).hasClass('close')){//タイトル要素にクラス名closeがあれば
+		$(this).removeClass('close');//クラス名を除去し
+	}else{//それ以外は
+		$(this).addClass('close');//クラス名closeを付与
+	}
+});
