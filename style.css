@@ -257,13 +257,13 @@ section {
 /*アコーディオンで現れるエリア*/
 .history-web {
     display: none;/*最初は非表示*/
-    background: #f3f3f3;
     margin: 0;
     padding: 1.5em 0 0;
 }
 
 .flexbox table {
   width: 100%;
+  text-align: left;
 }
 
 /* --- work --- */
