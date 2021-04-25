@@ -190,7 +190,7 @@ section {
   margin: 0 auto;
   text-align: justify;
 }
-/* --- section class="intro" --- */
+/* --- career --- */
 .intro {
   padding: 238px 0 80px;
   background:rgba(252, 245, 235, .45);
@@ -213,10 +213,9 @@ section {
   line-height: 2.2;
 }
 
-/* --- section class="contents" --- */
+/* --- work --- */
 .contents {
-  background:rgba(252, 245, 235, .45);
-  padding: 70px 0;
+  background:#fafafa;
 }
 
 .contents__inner {
