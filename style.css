@@ -194,6 +194,7 @@ section {
 .career__list {
   background: red;
   height: 50px;
+  margin: 0 0 10px;
 }
 
 /* --- work --- */
