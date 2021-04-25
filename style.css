@@ -131,61 +131,8 @@
 /* --- フッター --- */
 .site-footer {
   padding: 66px 0 0;
-  background: rgba(255, 250, 240, 0.45);
-}
-
-.footer-innerwrap {
-  width: 95%;
-  max-width: 960px;
-  margin: 0 auto;
-  display: flex;
-  padding: 0 0 50px;
-  justify-content: space-evenly;
-}
-
-.footer-info {
-  width: 25%;
-}
-.footer-info h3 {
-  padding: 0 0 8px;
-  line-height: 0.5em;
-}
-.footer-info p {
-  font-size: 12px;
-}
-.footer-info a {
-  color: #7a6e66;
-}
-
-.footer-nav__list {
-  column-count: 3;
-  font-size: 13px;
-}
-
-.footer-nav__item:nth-child(7),
-.footer-nav__item:last-child {
-  margin: 0 0 0 -40px;
-}
-
-.footer-nav__item::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f054";
-  font-weight: 900;
-  color: #7a6e66;
-  padding: 0 5px 0 0;
-}
-
-.footer-nav__item-inner {
-  color: #7a6e66;
-}
-
-.footer-bottom {
-  background: #D8D2C9;
-  height: 35px;
+  background: #eae3e3;
   text-align: center;
-  justify-content: center;
-  align-items: center;
-  display: flex;
 }
 
 .copyright {
