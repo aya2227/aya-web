@@ -1,7 +1,3 @@
-
-/* 共通パーツ
-
-====================================================*/
 /* --- スマホで改行 --- */
 .pc-only {
   display: block;
@@ -9,7 +5,7 @@
 .sp-only{
   display: none;
 }
-/* --- 960px--- */
+/* --- 960px --- */
 .inner {
   width: 90%;
   max-width: 960px;
@@ -130,7 +126,7 @@
 
 /* --- フッター --- */
 .site-footer {
-  padding: 66px 0 0;
+  padding: 20px 0;
   background: #eae3e3;
   text-align: center;
 }
@@ -161,12 +157,18 @@
   background-color: #FCDCAE;
 }
 
-/* トップページ各section
+/********************************
+  section
+*********************************/
+section {
 
-====================================================*/
-/* --- section class="visual" --- */
-.visual {
-  background:rgba(252, 245, 235, .45);
+  padding: 70px 0;
+}
+
+/* --- Profile --- */
+#profile {
+  background:#fafafa;
+  margin: 80px 0 0;
 }
 
 picture {
