@@ -201,6 +201,10 @@ section {
   border-radius: 10px;
 }
 
+.flexbox {
+  display: flex;
+}
+
 .date {
   width: 23%;
   text-align: left;
