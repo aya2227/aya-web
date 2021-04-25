@@ -192,6 +192,7 @@ section {
 }
 /* --- career --- */
 .career__list {
+  display: flex;
   background: #fff;
   width: 60%; 
   height: 50px;
