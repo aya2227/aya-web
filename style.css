@@ -193,8 +193,9 @@ section {
 /* --- career --- */
 .career__list {
   background: red;
+  width: 60%; 
   height: 50px;
-  margin: 0 0 10px;
+  margin: 0 auto 25px;
 }
 
 /* --- work --- */
