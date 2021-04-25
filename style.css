@@ -195,10 +195,17 @@ section {
   display: flex;
   background: #fff;
   width: 60%; 
-  height: 50px;
   margin: 0 auto 25px;
+  padding: 1.5em;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  border-radius: 10px;
 }
+
+.date {
+  width: 35%;
+  text-align: left;
+}
+
 
 /* --- work --- */
 #work {
