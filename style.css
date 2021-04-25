@@ -252,10 +252,10 @@ section {
 
 /*アコーディオンで現れるエリア*/
 .history-web {
-    display: none;/*はじめは非表示*/
+    display: none;/*最初は非表示*/
     background: #f3f3f3;
-	  margin:0 3% 3% 3%;
-    padding: 3%;
+    margin: 0;
+    padding: 1.5em 0 0;
 }
 
 /* --- work --- */
