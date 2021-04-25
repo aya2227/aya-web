@@ -168,6 +168,7 @@ section {
   display: block;
   font-size: 13px;
   letter-spacing: .02em;
+  line-height: .8em;
 }
 
 /* --- Profile --- */
