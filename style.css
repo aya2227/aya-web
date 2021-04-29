@@ -166,7 +166,7 @@ section {
 
 .h2-sub {
   display: block;
-  font-size:  0.36111em;/*13px*/
+  font-size:  0.8125em;/*13px*/
   letter-spacing: .02em;
 }
 
@@ -196,7 +196,6 @@ section {
 }
 
 .profile__name span {
-  font-size: 0.433rem;
   letter-spacing: .02em;
   padding: 0 0 0 .8em;
 }
