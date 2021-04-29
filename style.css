@@ -166,7 +166,7 @@ section {
 
 .h2-sub {
   display: block;
-  font-size: 13px;
+  font-size:  0.8125em;/*13px*/
   letter-spacing: .02em;
 }
 
@@ -189,6 +189,16 @@ section {
   width: 55%;
   margin: 0 auto;
   text-align: justify;
+}
+
+.profile__name {
+  font-size: 2rem;
+}
+
+.profile__name span {
+  font-size: 1.3rem;
+  letter-spacing: .02em;
+  padding: 0 0 0 .8em;
 }
 /* --- career --- */
 .career__list {
