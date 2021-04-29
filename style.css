@@ -220,7 +220,8 @@ section {
   width: 100%;
 }
 
-.date {
+.date,
+.point {
   width: 26%;
   text-align: left;
   padding: 0 1em 0 0;
