@@ -269,12 +269,16 @@ section {
 .work {
     display: none;/*最初は非表示*/
     margin: 0;
-    padding: 1.5em 0 0;
+    padding: 3em 0 0;
 }
 
 .flexbox table {
   width: 100%;
   text-align: left;
+}
+
+.flexbox__inner {
+
 }
 
 .history-web {
