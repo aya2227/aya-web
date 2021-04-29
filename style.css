@@ -266,7 +266,7 @@ section {
 }
 
 /*アコーディオンで現れるエリア*/
-.history-web {
+.work {
     display: none;/*最初は非表示*/
     margin: 0;
     padding: 1.5em 0 0;
@@ -275,6 +275,10 @@ section {
 .flexbox table {
   width: 100%;
   text-align: left;
+}
+
+.history-web {
+  display: block;
 }
 
 /* --- work --- */
