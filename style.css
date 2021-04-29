@@ -272,13 +272,8 @@ section {
     padding: 3em 0 0;
 }
 
-.flexbox table {
+.work__item {
   width: 100%;
-  text-align: left;
-}
-
-.flexbox__inner {
-
 }
 
 .history-web {
