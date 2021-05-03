@@ -16,3 +16,13 @@ $('.accordion').on('click', function() {//タイトル要素をクリックし�
 		$(this).addClass('close');//クラス名closeを付与
 	}
 });
+
+//back to topボタン
+$(document).ready(function(){
+  $('#page-top').click(function () { // #topBtnをクリックすると
+      $('body,html').animate({ // いちばん上にanimateする
+      scrollTop: 0 // 戻る位置
+      }, 400); // 戻るスピード
+      return false;
+  });
+});
