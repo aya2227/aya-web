@@ -468,30 +468,7 @@ Tablet Smartphone　max-width:768px
 
   /* --- フッター --- */
   .site-footer {
-    padding: 50px 0 0;
-  }
-
-  .footer-innerwrap {
-    display: block;
-    width: 100%;
-    padding: 0 0 30px;
-    text-align: center;
-  }
-
-  .footer-info {
-    width: 100%;
-  }
-
-  .footer-nav {
-    width: 80%;
-    margin: 10px auto 0;
-  }
-  .footer-nav__list {
-    column-count: 1;
-  }
-  .footer-nav__item:nth-child(7),
-  .footer-nav__item:last-child {
-    margin: 0;
+    padding: 20px 0;
   }
 
   /* --- back to top ボタン --- */
@@ -499,10 +476,7 @@ Tablet Smartphone　max-width:768px
     right: 20px;
     bottom: 20px;
   }
-
-  
 }
-
 
 /*====================================================
 applle Smartphone　max-width:428px
@@ -549,6 +523,11 @@ applle Smartphone　max-width:428px
 
   .history-web {
     width: 100%;
+  }
+
+  /* --- Work --- */
+  .work__list-item {
+    margin: 10px 10px 20px;
   }
 
 }
