@@ -176,7 +176,7 @@ a {
 }
 
 li {
-  list-style: desc;
+  margin: 0 0 .3em;
 }
 
 img {

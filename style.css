@@ -532,5 +532,23 @@ applle Smartphone　max-width:428px
     width: 100%;
     padding: 0;
   }
-  
+
+  .point {
+    margin: 0 0 .5em;
+  }
+
+  .accordion {
+    display: block;
+  }
+  .accordion::before {
+    top: 10px;
+  }
+  .accordion::after {
+    top: 10px;
+  }
+
+  .history-web {
+    width: 100%;
+  }
+
 }
