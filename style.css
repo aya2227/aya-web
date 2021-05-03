@@ -337,7 +337,6 @@ section {
   -webkit-backface-visibility: hidden;
 }
 .tiles .tile .details {
-  height: 60%;
   padding: 20px;
   color: #fff;
   position: absolute;
