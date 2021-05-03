@@ -157,6 +157,7 @@ h1,h2,h3,h4 {
   font-weight: 500;
 }
 h2 {
+  font-family: 'Sigmar One', cursive;
   font-size: 2.25rem;
   margin: 0 0 30px;
   line-height: 1.4;
