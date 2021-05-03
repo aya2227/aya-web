@@ -163,6 +163,26 @@
   background-color: #FCDCAE;
 }
 
+/* --- back to top ボタン --- */
+#page-top {
+  position: fixed;
+  right: 45px;
+  bottom: 45px;
+  z-index: 1;
+}
+
+.page-top__link {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #FCDCAE;
+}
+
 /********************************
   section
 *********************************/
@@ -492,6 +512,10 @@ applle Smartphone　max-width:428px
   }
 
   /* --- Profile --- */
+  .profile__img {
+    width: 45%;
+  }
+
   .profile__text {
     width: 90%;
   }
