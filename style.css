@@ -292,7 +292,7 @@ section {
   background:#fafafa;
 }
 
-.flexbox .work {
+.flexbox.work {
   position: relative;
 }
 
