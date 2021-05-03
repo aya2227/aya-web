@@ -28,10 +28,6 @@
   font-size: 100%;
 }
 
-.grobal-nav {
-  font-family: 'Josefin Sans', sans-serif;
-}
-
 .global-nav.active {
   display: flex;
   position: fixed;
@@ -55,6 +51,7 @@
 }
 
 .global-nav__item {
+  font-family: 'Josefin Sans', sans-serif;
   font-size: 14px;
   list-style: none;
   transition: .4s all;
