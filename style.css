@@ -436,6 +436,11 @@ Tablet Smartphone　max-width:840px
     outline: none;
     background: none;
   }
+
+  /* --- career --- */
+  .career__list {
+    width: 100%; 
+  }
 }
 
 
