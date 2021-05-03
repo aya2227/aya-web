@@ -337,6 +337,7 @@ section {
   -webkit-backface-visibility: hidden;
 }
 .tiles .tile .details {
+  height: 60%;
   padding: 20px;
   color: #fff;
   position: absolute;
@@ -757,10 +758,10 @@ time {
 }
 
 /* --- 事業所一覧--- */
-/*.info {
+.info {
   padding: 70px 0;
   background: rgba(252, 245, 235, .45);
-}*/
+}
 .info__inner {
   width: 90%;
   max-width: 960px;
