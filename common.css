@@ -140,8 +140,6 @@ input[type="submit"] {
 /****************************************************************
   Specify media element style メディア要素のスタイルを指定する
 ****************************************************************/
-@import url('https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap');
-
 img {
   border-style: none;
   /* Remove border when inside `a` element in IE 8/9/10 */
@@ -159,7 +157,6 @@ h1,h2,h3,h4 {
   font-weight: 500;
 }
 h2 {
-  font-family: 'Sigmar One', cursive;
   font-size: 2.25rem;
   margin: 0 0 30px;
   line-height: 1.4;
