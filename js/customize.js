@@ -22,7 +22,7 @@ $(document).ready(function(){
   $('#page-top').click(function () { // #topBtnをクリックすると
       $('body,html').animate({ // いちばん上にanimateする
       scrollTop: 0 // 戻る位置
-      }, 400); // 戻るスピード
+      }, 600); // 戻るスピード
       return false;
   });
 });
