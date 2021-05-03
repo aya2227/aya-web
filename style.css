@@ -500,250 +500,7 @@ Tablet Smartphone　max-width:768px
     bottom: 20px;
   }
 
-/* --- お問い合わせエリア --- */
-  .contact__inner {
-    top: 60px;
-  }
-
-/* --- ページタイトル --- */
-.page-title {
-  height: 100px;
-  text-align: center;
-}
-.page-title img {
-  height: 20px;
-}
-
-/* --- パンくずリスト --- */
-.breadcrumbs {
-  height: 40px;
-}
-.breadcrumbs__list li:last-of-type::before {
-  font-size: 10px;
-}
-.breadcrumbs__list span {
-  font-size: 10px;
-}
-
-
-  /* トップページ各section
-
-  ====================================================*/
-
-  /* --- section class="intro" --- */
-  .intro {
-    padding: 70px 0 80px;
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-
-  .main-copy {
-    margin: 0px 0 40px;
-  }
-  .main-copy__sub {
-    font-size: 14px;
-    line-height: 1.8;
-  }
-
-  /* --- section class="contents" --- */
-  .contents__inner {
-    display: block;
-  }
-
-  .contents-list {
-    width: 80%;
-    margin: 10px auto 70px;
-  }
-  .contents-list:last-child {
-    margin-bottom: 0;
-  }
-  .contents-list__image {
-    text-align: center;
-  }
-  .contents-list__img img {
-    object-fit: contain;
-    width: 100%;
-  }
-
-/* --- section class="news"--- */
-  .news {
-    padding: 50px 0;
-  }
-  .news-list__list {
-    padding: 10px 30px 30px;
-  }
-  .news-list__item {
-    display: block;
-  }
-  .news-list__item:first-of-type {
-    padding: 25px 0;
-  }
-  /* 下層ページ
-
-  ====================================================*/
-  /* --- ぐろうあっぷについて 運営理念--- */
-  .philosophy {
-    padding: 50px 0;
-  }
-  .philosophy h3 {
-    margin: 0 0 30px;
-    color: #CBDFAA;
-  }
-  .philosophy__text p {
-    padding: 0 0 50px;
-    font-size: 15px;
-  }
-  .philosophy__text p:last-child {
-    padding: 0;
-  }
-  .nizi__text p {
-    font-size: 15px;
-    line-height: 2.5
-  }
-  /* --- ぐろうあっぷについて ぐろうあっぷの特徴--- */
-  .feature {
-    padding: 50px 0;
-  }
-  .feature__inner h3 {
-    margin: 0 0 30px;
-  }
-  .feature-list {
-    display: block;
-    width: 100%;
-    margin: 0 auto 50px;
-  }
-  .feature-list__img img {
-    width: 100%;
-    object-fit: contain;
-  }
-  .feature-list__text {
-    width: 100%;
-  }
-
-  /* --- サービス内容　1日の流れ--- */
-  .schedule {
-    padding: 50px 0;
-    background: rgba(252, 245, 235, .45);
-  }
-  .schedule__inner {
-    background-image: url("../img/bg-schedule-sp.png");
-    background-position: top 55% right;
-  }
-
-  /* --- サービス内容　プログラム内容--- */
-  .program {
-    padding: 50px 0;
-  }
-  .program-list {
-    justify-content: end;
-  }
-  .program-list__item {
-    padding: 1em;
-    width: 50%;
-    font-size: 12px;
-    border-right: 1px solid #f9f9f9;
-  }
-  .program-list__item:nth-child(6) {
-    font-size: 10px;
-    line-height: 2.5;
-  }
-
-  /* --- サービス内容　ご利用時間--- */
-  .usagetime {
-    padding: 50px 0;
-  }
-  .usagetime__table {
-    width: 100%;
-  }
-
-  /* --- ご利用方法・料金　ご利用方法--- */
-  .flow__item {
-    display: block;
-    padding: 2em 1em 1em;
-  }
-  .flow__item-inner {
-    margin: 0 auto 1em;
-    width: 100%;
-  }
-  .flow__item-text {
-    width: 100%;
-    margin: 0;
-    text-align: left;
-  }
-  .flow__item-text h4 {
-    text-align: center;
-    margin: 0 0 .5em;
-  }
-
-  /* --- ご利用方法・料金　料金--- */
-  .price {
-    padding: 50px 0;
-  }
-  .price__table {
-    width: 100%;
-  }
-  .price__table-left {
-    width: 35%;
-  }
-  .price__table-right {
-    padding: 1em 0 1em 1em;
-  }
-  .price__attention {
-    width: 100%;
-  }
-  .period__attention {
-    text-align: left;
-  }
-
-  /* --- 事業所一覧--- */
-  .info {
-    padding: 50px 0;
-    background: rgba(252, 245, 235, .45);
-  }
-  .info__inner h3 {
-		margin: 0 0 10px;
-	}
-  .info__table th {
-    display: block;
-    width: 100%;
-    margin: 20px 0 0.5em;
-    padding: 0;
-  }
-  .info__table td {
-    display: block;
-    margin: 0 0 1em;
-    padding: 0;
-  }
-
-  .info__map {
-    margin: 0 auto;
-    position: relative;
-    width: 100%;
-    padding-top: 75%;
-  }
-  iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100% !important;
-  height: 100% !important;
-  }
-
-  /* --- お問い合わせ--- */
-  .contact-form {
-    padding: 50px 0;
-  }
-  .attention {
-    margin: 0 0 30px;
-    text-align: left;
-  }
-  .contact-form__main {
-    padding: 5% 5% 10%;
-  }
-  .contact-form__submit {
-    padding: 0;
-  }
-
+  
 }
 
 
@@ -759,4 +516,21 @@ applle Smartphone　max-width:428px
   .sp-only{
     display: block;
   }
+
+  /* --- Profile --- */
+  .profile__text {
+    width: 90%;
+  }
+
+  /* --- Career --- */
+  .flexbox {
+    display: block;
+  }
+
+  .date, 
+  .point {
+    width: 100%;
+    padding: 0;
+  }
+  
 }
