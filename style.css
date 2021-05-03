@@ -337,6 +337,7 @@ section {
   -webkit-backface-visibility: hidden;
 }
 .tiles .tile .details {
+  height: 60%;
   padding: 20px;
   color: #fff;
   position: absolute;
@@ -352,6 +353,7 @@ section {
   transition-property: top, opacity;
   transition-duration: 0.3s;
   transition-delay: 0s;
+  background: transparent;
 }
 .tiles .tile .details .title {
   line-height: 1;
