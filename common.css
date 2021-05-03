@@ -140,8 +140,6 @@ input[type="submit"] {
 /****************************************************************
   Specify media element style メディア要素のスタイルを指定する
 ****************************************************************/
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,600&family=Sigmar+One&display=swap');
-
 img {
   border-style: none;
   /* Remove border when inside `a` element in IE 8/9/10 */
