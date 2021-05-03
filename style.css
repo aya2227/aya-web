@@ -292,6 +292,10 @@ section {
   background:#fafafa;
 }
 
+.flexbox .work {
+  position: relative;
+}
+
 .tiles {
   width: 1040px;
   font-size: 0;
