@@ -292,18 +292,18 @@ section {
   background:#fafafa;
 }
 
-.flexbox.work {
+/* .flexbox.work { 
   position: relative;
-}
-@import url(//codepen.io/chrisdothtml/pen/ojLzJK.css);
+}*/
+
 .tiles {
   width: 1040px;
   font-size: 0;
   text-align: center;
-  position: absolute;
+  /*position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
 }
 .tiles .tile {
   display: inline-block;
