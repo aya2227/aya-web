@@ -353,7 +353,6 @@ section {
   transition-property: top, opacity;
   transition-duration: 0.3s;
   transition-delay: 0s;
-  background: transparent;
 }
 .tiles .tile .details .title {
   line-height: 1;
@@ -759,10 +758,10 @@ time {
 }
 
 /* --- 事業所一覧--- */
-.info {
+/*.info {
   padding: 70px 0;
   background: rgba(252, 245, 235, .45);
-}
+}*/
 .info__inner {
   width: 90%;
   max-width: 960px;
