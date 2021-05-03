@@ -199,8 +199,8 @@ section {
 }
 
 .profile__name {
-  font-size: 2rem;
   line-height: 2.4;
+  font-weight: normal;
 }
 
 .profile__name span {
