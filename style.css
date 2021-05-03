@@ -295,7 +295,7 @@ section {
 .flexbox.work {
   position: relative;
 }
-
+@import url(//codepen.io/chrisdothtml/pen/ojLzJK.css);
 .tiles {
   width: 1040px;
   font-size: 0;
