@@ -388,16 +388,15 @@ section {
   transition-delay: 0.25s;
 }*/
 
-.work__list-item {
+.work__list {
   width: 90%;
   display: flex;
   margin: 0 auto 10px;
   padding: 20px;
 }
 
-.work__list-item img {
-  width: 30%;
-  margin: 0 2.5em 0 0;
+.work__img {
+  margin: 0 2em 0 0;
 }
 
 .details {
