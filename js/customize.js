@@ -17,11 +17,30 @@ $('.accordion').on('click', function() {//タイトル要素をクリックし�
 	}
 });
 
-//back to topボタン
-$(document).ready(function(){
-  $('#page-top').click(function () { // #topBtnをクリックすると
-      $('body,html').animate({ // いちばん上にanimateする
-      scrollTop: 0 // 戻る位置
+//BACK TO TOPボタン
+$(function() {
+  var showFlag = false;
+  var topBtn = $('#page-top');
+  topBtn.css('bottom', '-200px');
+  var showFlag = false;
+  //スクロールが100に達したらボタン表示
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 100) {
+          if (showFlag == false) {
+              showFlag = true;
+              topBtn.stop().animate({'bottom' : '70px'}, 200);
+          }
+      } else {
+          if (showFlag) {
+              showFlag = false;
+              topBtn.stop().animate({'bottom' : '-200px'}, 200);
+          }
+      }
+  });
+  //スクロールしてトップ
+  topBtn.click(function () {
+      $('body,html').animate({
+          scrollTop: 0 // 戻る位置
       }, 600); // 戻るスピード
       return false;
   });
