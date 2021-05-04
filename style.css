@@ -172,9 +172,16 @@ section {
 
 .h2-sub {
   display: block;
-  font-size:  0.36111em;/*13px*/
+  font-size:  .36111em;/*13px*/
   font-weight: normal;
   letter-spacing: .02em;
+}
+
+.h3-sub {
+  font-size: .438em;
+  font-weight: normal;
+  letter-spacing: .02em;
+  padding: 0 0 0 .5em;
 }
 
 /* --- Profile --- */
