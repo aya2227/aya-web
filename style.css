@@ -424,6 +424,19 @@ Tablet Smartphone　max-width:768px
     right: 10px;
     bottom: 75px;
   }
+
+  /* --- work --- */
+  .work__list {
+    width: 100%;
+    display: block;
+  }
+
+  .details {
+    width: 100%;
+    padding: 0;
+    margin: 2em 0 0;
+}
+
 }
 
 /*====================================================
