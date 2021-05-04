@@ -191,7 +191,7 @@ section {
   position: relative;/*+マークの位置基準とするためrelative指定*/
   cursor: pointer;
 }
-/*アイコンの＋と×*/
+/* アイコンの＋と× */
 .accordion::before,
 .accordion::after{
   position: absolute;
@@ -219,7 +219,7 @@ section {
 	transform: rotate(-45deg);
 }
 
-/*アコーディオンで現れるエリア*/
+/* アコーディオンで現れるエリア */
 .accordion__hide {
   display: none;/*最初は非表示*/
   margin: 0;
@@ -310,21 +310,6 @@ Tablet Smartphone　max-width:840px
   }
   .global-nav__item-inner:hover:after {
     transform: none;
-  }
-
-  .hamburger {
-    display : block;
-    position: fixed;
-    z-index : 3;
-    right : 13px;
-    top   : 12px;
-    width : 40px;
-    height: 40px;
-    cursor: pointer;
-    text-align: center;
-    border: none;
-    outline: none;
-    background: none;
   }
 
   /* --- career --- */
