@@ -299,17 +299,10 @@ section {
   background:#fafafa;
 }
 
-.work__list {
+/*.work__list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  /*width: 1040px;
-  font-size: 0;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);*/
 }
 .work__list .work__list-item {
   display: inline-block;
@@ -385,7 +378,8 @@ section {
 }
 .work__list .work__list-item:focus .info, .work__list .tile:hover .info {
   transition-delay: 0.25s;
-}
+}*/
+
 
 /*====================================================
 Tablet Smartphone　max-width:840px
