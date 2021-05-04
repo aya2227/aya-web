@@ -15,7 +15,7 @@
 
 /* --- ヘッダー --- */
 .site-header {
-  background: #FCF5EB;
+  background: #add8e6;
   display: flex;
   width: 100%;
   height: 80px;
@@ -28,30 +28,13 @@
   font-size: 100%;
 }
 
-.site-header h1 a {
+.logo__link {
   font-size: 20px;
+  color: #fff;
 }
 
-/*.global-nav.active {
-  display: flex;
-  position: fixed;
-  z-index : 2;
-  top  : 0;
-  left : 0;
-  color: #7a6e66;
-  background: #FCF5EB;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  transition: opacity .6s ease, visibility .6s ease;
-  visibility: visible;
-  opacity: 100;
-  align-items: center;
-  justify-content: center;
-}*/
-
 .global-nav__list {
-    display: flex;
+  display: flex;
 }
 
 .global-nav__item {
@@ -60,6 +43,7 @@
   font-size: 18px;
   list-style: none;
   transition: .4s all;
+  color: #fff;
 }
 .global-nav__item:not(:last-child){
   margin-right: 20px;
@@ -87,54 +71,10 @@
   transform: translate(0, 0);
 }
 
-/* --- ハンバーガーボタン --- */
-/*.hamburger {
-  display: none;
-}
-.hamburger span {
-  display : block;
-  position: absolute;
-  width   : 30px;
-  height  : 2px ;
-  left    : 6px;
-  background : #7a6e66;
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition   : 0.3s ease-in-out;
-  transition        : 0.3s ease-in-out;
-}
-.hamburger span:nth-child(1) {
-  top: 10px;
-}
-.hamburger span:nth-child(2) {
-  top: 20px;
-}
-.hamburger span:nth-child(3) {
-  top: 30px;
-}
-
-/* --- ナビ開いてる時のボタン --- */
-/*.hamburger.active span:nth-child(1) {
-  top : 16px;
-  left: 6px;
-  background :#7a6e66;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform   : rotate(-45deg);
-  transform        : rotate(-45deg);
-}
-.hamburger.active span:nth-child(2),
-.hamburger.active span:nth-child(3) {
-  top: 16px;
-  background: #7a6e66;
-  -webkit-transform: rotate(45deg);
-  -moz-transform   : rotate(45deg);
-  transform        : rotate(45deg);
-}
-*/
-
 /* --- フッター --- */
 .site-footer {
   padding: 20px 0;
-  background: #eae3e3;
+  background: #e1e1e1;
   text-align: center;
 }
 
