@@ -43,7 +43,6 @@
   font-size: 18px;
   list-style: none;
   transition: .4s all;
-  color: #fff;
 }
 .global-nav__item:not(:last-child){
   margin-right: 20px;
@@ -53,7 +52,7 @@
     display: inline-block;
     position: relative;
     overflow: hidden;
-    color: #7a6e66;
+    color: #fff;;
     text-decoration: none;
 }
 .global-nav__item-inner:after {
