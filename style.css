@@ -405,6 +405,10 @@ section {
   font-weight: normal;
 }
 
+.details__desc {
+  padding: 0 0 0 .5em;
+}
+
 /*====================================================
 Tablet Smartphone　max-width:840px
 ====================================================
