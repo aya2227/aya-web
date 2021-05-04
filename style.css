@@ -388,11 +388,6 @@ section {
   transition-delay: 0.25s;
 }*/
 
-.work__list {
-  height: 300px;
-  overflow-y: scroll;
-  background: #fff;
-}
 .work__list-item {
   width: 90%;
   display: flex;
