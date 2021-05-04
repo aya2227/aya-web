@@ -391,6 +391,7 @@ section {
 }
 
 .work__list-item img {
+  width: 30%;
   margin: 0 1em 0 0;
 }
 
