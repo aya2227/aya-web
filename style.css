@@ -198,7 +198,7 @@ section {
   content:'';
   width: 15px;
   height: 2px;
-  background-color: #333;
+  background-color: #555;
 }
 .accordion::before{
   top:48%;
