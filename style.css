@@ -380,6 +380,10 @@ section {
   transition-delay: 0.25s;
 }*/
 
+.work__list-item {
+  width: 100%;
+  display: flex;
+}
 
 /*====================================================
 Tablet Smartphone　max-width:840px
