@@ -387,6 +387,11 @@ section {
 .work__list-item {
   width: 100%;
   display: flex;
+  margin: 0 0 10px;
+}
+
+.work__list-item img {
+  margin: 0 1em 0 0;
 }
 
 /*====================================================
