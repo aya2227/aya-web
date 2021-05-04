@@ -395,6 +395,15 @@ section {
   margin: 0 1em 0 0;
 }
 
+.details {
+  text-align: left;
+}
+
+.details__title {
+  line-height: 2.4;
+  font-weight: normal;
+}
+
 /*====================================================
 Tablet Smartphone　max-width:840px
 ====================================================
