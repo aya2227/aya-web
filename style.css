@@ -178,6 +178,7 @@ section {
 }
 
 .h3-sub {
+  display: block;
   font-size: .438em;
   font-weight: normal;
   letter-spacing: .02em;
@@ -393,7 +394,7 @@ section {
   background: #fff;
 }
 .work__list-item {
-  width: 80%;
+  width: 90%;
   display: flex;
   margin: 0 auto 10px;
   padding: 20px;
@@ -413,7 +414,14 @@ section {
 }
 
 .details__desc {
+  margin: 1em 0 0;
   padding: 0 0 0 .5em;
+}
+
+.btn {
+  background: #000;
+  color: #fff;
+  padding: .5em;
 }
 
 /*====================================================
