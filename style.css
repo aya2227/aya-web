@@ -273,6 +273,9 @@ section {
   padding: 0 0 0 .5em;
 }
 
+.details__desc a {
+  text-decoration: underline;
+}
 
 /*====================================================
 Tablet Smartphone　max-width:840px
