@@ -32,7 +32,7 @@
   font-size: 20px;
 }
 
-.global-nav.active {
+/*.global-nav.active {
   display: flex;
   position: fixed;
   z-index : 2;
@@ -48,7 +48,7 @@
   opacity: 100;
   align-items: center;
   justify-content: center;
-}
+}*/
 
 .global-nav__list {
     display: flex;
@@ -88,7 +88,7 @@
 }
 
 /* --- ハンバーガーボタン --- */
-.hamburger {
+/*.hamburger {
   display: none;
 }
 .hamburger span {
@@ -113,7 +113,7 @@
 }
 
 /* --- ナビ開いてる時のボタン --- */
-.hamburger.active span:nth-child(1) {
+/*.hamburger.active span:nth-child(1) {
   top : 16px;
   left: 6px;
   background :#7a6e66;
@@ -129,6 +129,7 @@
   -moz-transform   : rotate(45deg);
   transform        : rotate(45deg);
 }
+*/
 
 /* --- フッター --- */
 .site-footer {
@@ -146,8 +147,7 @@
 /* --- back to top ボタン --- */
 #page-top {
   position: fixed;
-  right: 45px;
-  bottom: 45px;
+  right: 15px;
   z-index: 1;
 }
 
@@ -160,7 +160,7 @@
   text-decoration: none;
   color: #fff;
   border-radius: 50%;
-  background-color: #FCDCAE;
+  background-color:#AEDBE1;
 }
 
 /********************************
