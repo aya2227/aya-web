@@ -307,87 +307,6 @@ section {
   background:#fafafa;
 }
 
-/*.work__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.work__list .work__list-item {
-  display: inline-block;
-  margin: 10px;
-  text-align: left;
-  opacity: 0.99;
-  overflow: hidden;
-  position: relative;
-  border-radius: 3px;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.05);
-}
-.work__list .work__list-item:before {
-  content: "";
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.7) 100%);
-  width: 100%;
-  height: 50%;
-  opacity: 0;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  z-index: 2;
-  transition-property: top, opacity;
-  transition-duration: 0.3s;
-}
-.work__list .work__list-item img {
-  display: block;
-  width: 300px;
-  max-width: 100%;
-  height: 245px;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-.work__list .work__list-item .details {
-  padding: 20px;
-  color: #fff;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  z-index: 3;
-}
-.work__list .work__list-item .details span {
-  display: block;
-  opacity: 0;
-  position: relative;
-  top: 100px;
-  transition-property: top, opacity;
-  transition-duration: 0.3s;
-  transition-delay: 0s;
-}
-.work__list .work__list-item .details .title {
-  line-height: 1;
-  font-weight: 600;
-  font-size: 18px;
-}
-.work__list .work__list-item .details .info {
-  line-height: 1.2;
-  margin-top: 5px;
-  font-size: 12px;
-}
-.work__list .work__list-item:focus:before,
-.work__list .work__list-item:focus span, .work__list .work__list-item:hover:before,
-.work__list .work__list-item:hover span {
-  opacity: 1;
-}
-.work__list .work__list-item:focus:before, .work__list .work__list-item:hover:before {
-  top: 50%;
-}
-.work__list .work__list-item:focus span, .work__list .work__list-item:hover span {
-  top: 0;
-}
-.work__list .work__list-item:focus .title, .work__list .work__list-item:hover .title {
-  transition-delay: 0.15s;
-}
-.work__list .work__list-item:focus .info, .work__list .tile:hover .info {
-  transition-delay: 0.25s;
-}*/
-
 .work__list {
   width: 90%;
   display: flex;
@@ -401,6 +320,7 @@ section {
 }
 
 .details {
+  width: 90%;
   text-align: left;
   padding: 0 0 0 1em;
 }
