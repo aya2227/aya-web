@@ -7,41 +7,38 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <!--レスポンシブ-->
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<!--OGPタグ/twitterカード-->
+<!--OGPタグ/twitterカード 今回は使わない
 <meta property="og:url" content="http://aya2227.github.io/aya-web/" />
-<meta property="og:title" content="ayae | Portfolio" />
+<meta property="og:title" content="Ayae | Portfolio" />
 <meta property="og:type" content="website">
-<meta property="og:description" content="ayaeのこれまでの経歴や作品を掲載しています。" />
-<meta property="og:image" content="画像URL" />
+<meta property="og:description" content="Ayaeのこれまでの経歴や作品を掲載しています。" />
+<meta property="og:image" content="画像URL" />-->
 <!--電話番号や住所が自動でリンクになるのを防ぐ　今回は使わない
 <meta name="format-detection" content="email=no,telephone=no,address=no" />
 -->
 <!-- 検索エンジンのクローラの動きを制御する -->
 <meta name="robots" content="noydir" />
 <meta name="robots" content="noodp" />
-<meta name="robots" content="index,follow" />
+<meta name="robots" content="noindex">
 <!-- ファビコン -->
-<link rel="shortcut icon" href="">
-<!--サイトアイコン
-<link rel="icon" href="画像URL" sizes="16x16" type="image/png" />
-<link rel="icon" href="画像URL" sizes="32x32" type="image/png" />
-<link rel="icon" href="画像URL" sizes="48x48" type="image/png" />
-<link rel="icon" href="画像URL" sizes="62x62" type="image/png" />
--->
-<!--150X150スマホ用アイコン
-<link rel="apple-touch-icon-precomposed" href="画像のURL" />
--->
+<link rel="shortcut icon" href=".img/favicon.ico">
+<link rel="apple-touch-icon" sizes="144x144" href=".img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href=".img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href=".img/favicon-16x16.png">
+<link rel="manifest" href=".img/site.webmanifest">
+<link rel="mask-icon" href=".img/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+
+<link rel="stylesheet" href="common.css" type="text/css" media="all"/>
 <link rel="stylesheet" href="style.css" type="text/css" media="all"/>
+<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 <link rel="stylesheet" href="http://mplus-webfonts.sourceforge.jp/mplus_webfonts.css">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
 
 <meta name="description"
       content="ayaeのこれまでの経歴や作品を掲載しています。" />
-<title>ayae | Portfolio</title>
-
-<script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/common/js/jquery.page-scroller-308.js"></script>
-<script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/script.js"></script>
+<title>Ayae | Portfolio</title>
 
 </head>
 
@@ -50,7 +47,7 @@
 <div class="wrapper">
   <header class="site-header">
     <h1>
-      <a href="http://aya2227.github.io/aya-web/" class="logo__link">ayae_Portfolio</a>
+      <a href="http://aya2227.github.io/aya-web/" class="logo__link">Ayae_Portfolio</a>
     </h1>
     <nav class="global-nav">
       <ul class="global-nav__list">
@@ -65,26 +62,160 @@
         </li>
       </ul>
     </nav>
-    <button type="button" class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
   </header>
-  <section id="profile" style="background: pink; padding: 80px 0 0;">
-    <p style="text-align:center; padding:60px 0 30px;">profile</p>
-    <div class="img" style="text-align:center; margin: 0 auto; background: gray; width:30%; height:200px;">
-      <p　style="color: #fff;">
-        写真入れる
-      </p>
+  <section id="profile">
+    <div class="section__inner">
+      <h2>Profile<span class="h2-sub"><span style="font-weight: bold;">Ayae</span>ってこんな人</span></h2>
+      <div class="profile__img" data-aos="zoom-in-up" data-aos-duration="600">
+        <img src="./img/profile.png">
+      </div>
+      <div class="profile__text" data-aos="zoom-in-up" data-aos-duration="600">
+        <h3 class="profile__name">竹政 絢絵<span>Takemasa Ayae</span></h3>
+        <p>
+          北海道札幌市出身。1991年3月生まれの牡羊座で未年。<br class="pc-only">
+          札幌で生まれ、札幌で育つ。（1年間だけ倶知安町に移住）
+        </p><br>
+        <p>
+          高校時代は「学校祭の打ち上げでタダでピザが食べれるから手伝って！」と誘われ、まんまと生徒会に入会するほどの食いしん坊。
+          書道部では一年時に全道大会に行けなかったことが悔しくて、大好きな隷書をひたすら練習し、二・三年時は全道大会行きを決める。
+          大人しそうに見えて負けず嫌いな一面アリ。<br><br class="sp-only">
+          卒業後は札幌市内で働いていたが、長年の憧れだった東京での生活を諦めきれず、28歳の夏に札幌を離れ今に至る。
+        </p><br>
+        <p>
+          趣味はカフェ巡りと散歩。美術館巡りはビギナークラス。ファッションが好きで、服の値段とカラバリの暗記が得意（店員さんに若干引かれる）
+        </p>
+      </div>
     </div>
-    <div class="test" style="padding:50px 0; text-align:center;">
-      自己紹介のテキスト入れるーーーーーーーーーーーーー
+  </section>
+  <section id="career">
+    <div class="section__inner">
+      <h2>Carrer<span class="h2-sub">職歴</span></h2>
+      <div class="career__list" data-aos="zoom-in" data-aos-duration="600">
+        <div class="flexbox">
+          <div class="date">2009年8月〜2013年4月</div>
+          <div class="history">高校卒業後、コンビニやスーパー、服飾雑貨店でのアルバイトを経験</div>
+        </div>
+      </div>
+      <div class="career__list" data-aos="zoom-in" data-aos-duration="600">
+        <div class="flexbox">
+          <div class="date">2013年4月〜2019年6月</div>
+          <div class="history">生命保険会社・電力会社で入力事務として勤務</div>
+        </div>
+      </div>
+      <div class="career__list last" data-aos="zoom-in" data-aos-duration="600">
+        <div class="accordion">
+          <div class="date">2019年8月〜現在まで</div>
+          <div class="history">iFIELD株式会社に入社し、Web制作に携わる</div>
+        </div>
+        <div class="accordion__hide">
+          <div class="flexbox">
+                <div class="point">担当業務</div>
+                <div class="history-web">
+                  <ul>
+                    <li>Webサイトの新規作成に伴うワイヤーフレーム作成・デザイン作成・コーディング・テスト</li>
+                    <li>既存のWebサイトの定期的な修正（画像の差し替えやリンク先の変更）</li>
+                    <li>自社サービスの開発</li>
+                    <li>飲食店メニューブックの作成</li>
+                    <li>新入社員のサポート（マークアップの指導）</li>
+                  </ul>
+                </div>
+          </div>
+          <div class="flexbox">
+            <div class="point">使用言語</div>
+            <div class="history-web">
+              <ul>
+                <li><strong>HTML / CSS</strong>：素書き可能です。</li>
+                <li><strong>jQuery</strong>：調べながらの実装が可能です。</li>
+                <li><strong>JavaScript</strong>：基礎から学習中です。</li>
+                <li><strong>Bootstrap</strong>：調べながらの実装が可能です。</li>
+                <li><strong>SCSS</strong>：ネストの基礎まで学習済。業務での使用経験はありません。</li>
+              </ul>
+            </div>
+          </div>
+          <div class="flexbox">
+            <div class="point">使用ツール・CMS</div>
+            <div class="history-web">
+              <ul>
+                <li><strong>Git</strong>：ブランチ作成・コミット・プッシュ/プルは業務で経験あり。GUI使用。コマンド含め基礎から学習中です。</li>
+                <li><strong>Adobe XD</strong>：ワイヤーフレーム、モックアップの作成が可能です。</li>
+                <li><strong>Photoshop</strong>：画像のトリミングが可能です。</li>
+                <li><strong>Illustrator</strong>：Webサイトで使用する画像やメニューブックの作成が可能です。</li>
+                <li><strong>WordPress</strong>：オリジナルテーマを作成し、カスタマイズが可能です。</li>
+                <li><strong>EC-CUBE4</strong>：HTML/CSSでフロント部分のカスタマイズが可能です。</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-  <section id="career" style="background: #fff; height: 200px; padding:60px 0 30px;">
-    <p style="text-align:center">carrer</p>    
+  <section id="work">
+    <div class="section__inner">
+      <h2>Work<span class="h2-sub">制作物</span></h2>
+        <div class="work__list" data-aos="zoom-in" data-aos-duration="600">
+          <a href="http://growth-houday.com/growup/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/growup.png" alt="ぐろうあっぷ" />
+          </a>
+          <div class="details">
+            <h3 class="details__title">ぐろうあっぷ<span class="h3-sub">2021年4月リリース / デザイン・コーディング・テスト担当</span></h3>
+            <p class="details__desc">
+              CSS設計に興味があり、これまでの経験で保守性の高いコードを書くことの重要性も感じていたため、今回はBEMを取り入れました。
+              時間が経ってからソースコードを見返した時にもわかりやすい記述ができたのではないかと思います。
+              またSEOを意識して適当なタグを使うことを意識しました。
+              初めて担当したGROWTHと比べても無駄な記述を減らせるようになりました。<br>
+            </p>
+          </div>
+        </div>
+        <div class="work__list" data-aos="zoom-in" data-aos-duration="600">
+          <a href="http://ayae-t.com/demo/ay-taxi/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/taxi.png" alt="タクシーデモサイト" />
+          </a>
+          <div class="details">
+            <h3 class="details__title">タクシー会社デモサイト<span class="h3-sub">2021年4月〜5月実装 / デザイン・コーディング担当</span></h3>
+            <p class="details__desc">
+              架空のタクシー会社のデモサイトを制作しました。2019年12月〜2020年1月に業務の中で実装したものを、
+              今回一部デザインを変更した上で新たにコーディングし直しました。
+              ヘッダーメニューや画像にホバーアニメーションを多数取り入れ、記述に慣れることを意識しました。<br>
+              またGoogleMapは色味の変更などカスタマイズができることを学びました。<br>
+            </p>
+          </div>
+        </div>
+        <div class="work__list" data-aos="zoom-in" data-aos-duration="600">
+          <a href="http://growth-houday.com/" target="_blank" rel="noopener noreferrer">
+            <img src="./img/growth.png" alt="GROWTH放課後等デイサービス" />
+          </a>
+          <div class="details">
+            <h3 class="details__title">GROWTH放課後等デイサービス<span class="h3-sub">2019年11月リリース / デザイン・コーディング・テスト担当</span></h3>
+            <p class="details__desc">
+              「経営母体変更のため、既存のサイト（<a href="http://brighteners.jp/" target="_blank" rel="noopener noreferrer">SHINKA</a>）
+              の内容を生かしつつ、デザインを少し変えて欲しい」との要望に基づいて開発しました。
+              ヘッダーアイコンの傾きや採用情報のタブに動きを取り入れることで、楽しさを表現しました。<br>
+              入社2ヶ月で初めて担当した案件で、当時はマークアップの理解に乏しかったため決して綺麗なソースコードとは言えませんが、コーディングに少し慣れることができました。
+              今であればもっと余白をつけたり、letter-spacingを使用して可読性を高める等の対応をします。
+            </p>
+          </div>
+        </div>
+    </div>   
   </section>
-  <section id="work" style="background: pink; height: 200px; padding:60px 0 30px;">
-    <p style="text-align:center">work</p>      
-  </section>
+  <div id="page-top">
+    <a href="#" class="page-top__link">
+      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </a>
+  </div>
+  <footer class="site-footer">
+      <small class="copyright">© Ayae_Portfolio All rights reserved.</small>
+  </footer>
+</div><!-- wrapper -->
+  
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+        crossorigin="anonymous">
+</script>
+<script src="./js/customize.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+</body>
+</html>

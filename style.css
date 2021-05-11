@@ -1,220 +1,21 @@
-
-/* # =================================================================
-   # Global selectors
-   # ================================================================= */
-html {
-  box-sizing: border-box;
-  word-break: normal;
-  tab-size: 4;
-  -webkit-text-size-adjust: 100%;
-  /* Prevent adjustments of font size after orientation changes in iOS */
-}
-
-*,
-::before,
-::after {
-  box-sizing: inherit;
-  background-repeat: no-repeat;
-  /* Set `background-repeat: no-repeat` to all elements and pseudo elements */
-}
-
-::before,
-::after {
-  vertical-align: inherit;
-  text-decoration: inherit;
-  /* Inherit text-decoration and vertical align to ::before and ::after pseudo elements */
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  /* Reset `padding` and `margin` of all elements */
-}
-
-/* # =================================================================
-     # General elements
-     # ================================================================= */
-hr {
-  overflow: visible;
-  /* Show the overflow in Edge and IE */
-  height: 0;
-  /* Add the correct box sizing in Firefox */
-}
-
-details,
-main {
+/* --- スマホで改行 --- */
+.pc-only {
   display: block;
-  /* Render the `main` element consistently in IE. */
 }
-
-a {
-  background-color: transparent;
-  /* Remove the gray background on active links in IE 10 */
-}
-
-a:active,
-a:hover {
-  outline-width: 0;
-  /* Remove the outline when hovering in all browsers */
-}
-
-pre {
-  font-size: 1em;
-  /* Correct the odd `em` font sizing in all browsers */
-}
-
-b,
-strong {
-  font-weight: bolder;
-  /* Add the correct font weight in Chrome, Edge, and Safari */
-}
-
-/* # =================================================================
-     # Forms
-     # ================================================================= */
-input {
-  border-radius: 0;
-}
-
-textarea {
-  overflow: auto;
-  /* Internet Explorer 11+ */
-  resize: vertical;
-  /* Specify textarea resizability */
-}
-
-button,
-input,
-optgroup,
-select,
-textarea {
-  font: inherit;
-  /* Specify font inheritance of form elements */
-}
-
-/* Remove the default button styling in all browsers */
-button,
-input,
-select,
-textarea {
-  border-style: none;
-  background-color: transparent;
-}
-
-/* Style select like a standard input */
-select {
-  -webkit-appearance: none;
-  /* Chrome 41+ */
-  -moz-appearance: none;
-  /* Firefox 36+ */
-}
-/* select::-ms-expand {
-    display: block;
-} */
-
-/* iOSでのデフォルトスタイルをリセット */
-input[type="submit"],
-input[type="button"] {
-  border-radius: 0;
-  -webkit-box-sizing: content-box;
-  -webkit-appearance: button;
-  appearance: button;
-  border: none;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-input[type="submit"]::-webkit-search-decoration,
-input[type="button"]::-webkit-search-decoration {
+.sp-only{
   display: none;
 }
-input[type="submit"]::focus,
-input[type="button"]::focus {
-  outline-offset: -2px;
+/* --- 960px --- */
+.section__inner {
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
 }
-/*ここまで*/
-
-input[type="submit"] {
-  cursor: pointer;
-}
-/* # =================================================================
-     # Specify media element style
-     # ================================================================= */
-img {
-  border-style: none;
-  /* Remove border when inside `a` element in IE 8/9/10 */
-}
-
-html {
-  font-size: 100%;
-}
-
-body {
-  font-family: "Montserrat",Arial,"游ゴシック体",Meiryo,sans-serif;
-  line-height: 1.8;
-  color: #7a6e66;
-  font-size: 0.9375rem; /*15px*/
-}
-
-h1,h2,h3,h4 {
-  font-weight: 500;
-}
-h2 {
-  font-size: 2.25rem;
-}
-h3 {
-  font-size: 2rem;
-}
-h4 {
-  font-size: 1.5rem;
-}
-
-a {
-  transition: .3s;
-  text-decoration: none;
-}
-
-li {
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  vertical-align: bottom;
-}
-
-::selection {
-  color: #fff;
-  background-color: #F1B8B3;
-}
-
-#contents {
-  padding: 80px 0 0;
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    font-size: 14px;
-  }
-
-  h2 {
-    font-size: 30px;
-    font-size: 1.875rem;
-  }
-  h3 {
-    font-size: 24px;
-    font-size: 1.5rem;
-  }
-
-  #contents {
-    padding: 60px 0 0;
-  }
-}
-
-
 
 /* --- ヘッダー --- */
 .site-header {
-  background: #FCF5EB;
+  background: #add8e6;
   display: flex;
   width: 100%;
   height: 80px;
@@ -227,30 +28,19 @@ img {
   font-size: 100%;
 }
 
-.global-nav.active {
-  display: flex;
-  position: fixed;
-  z-index : 2;
-  top  : 0;
-  left : 0;
-  color: #7a6e66;
-  background: #FCF5EB;
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  transition: opacity .6s ease, visibility .6s ease;
-  visibility: visible;
-  opacity: 100;
-  align-items: center;
-  justify-content: center;
+.logo__link {
+  font-size: 20px;
+  color: #fff;
 }
 
 .global-nav__list {
-    display: flex;
+  display: flex;
 }
 
 .global-nav__item {
-  font-size: 14px;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
   list-style: none;
   transition: .4s all;
 }
@@ -262,7 +52,7 @@ img {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    color: #7a6e66;
+    color: #fff;;
     text-decoration: none;
 }
 .global-nav__item-inner:after {
@@ -280,47 +70,356 @@ img {
   transform: translate(0, 0);
 }
 
-/* --- ハンバーガーボタン --- */
-.hamburger {
-  display: none;
+/* --- フッター --- */
+.site-footer {
+  padding: 20px 0;
+  background: #e1e1e1;
+  text-align: center;
 }
-.hamburger span {
-  display : block;
+
+.copyright {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* --- back to top ボタン --- */
+#page-top {
+  position: fixed;
+  right: 15px;
+  z-index: 1;
+}
+
+.page-top__link {
+  display: block;
+  width: 50px;
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  border-radius: 50%;
+  background-color:#AEDBE1;
+}
+
+/********************************
+  section
+*********************************/
+section {
+  padding: 70px 0;
+}
+
+.h2-sub {
+  display: block;
+  font-size:  .36111em;/*13px*/
+  font-weight: normal;
+  letter-spacing: .02em;
+}
+
+.h3-sub {
+  display: block;
+  font-size: .438em;
+  font-weight: normal;
+  letter-spacing: .02em;
+  padding: .3em 0 0 .5em;
+}
+
+/* --- Profile --- */
+#profile {
+  background:#fafafa;
+  padding: 150px 0 70px; 
+}
+
+.profile__img {
+  width: 30%;
+  margin: 0 auto 30px;
+}
+
+.profile-img img {
+  border-radius: 50%;
+}
+
+.profile__text {
+  width: 80%;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+.profile__name {
+  line-height: 2.4;
+  font-weight: normal;
+}
+
+.profile__name span {
+  font-size: .75em;
+  letter-spacing: .02em;
+  padding: 0 0 0 .8em;
+}
+/* --- career --- */
+.career__list {
+  display: flex;
+  background: #fff;
+  width: 80%; 
+  margin: 0 auto 25px;
+  padding: 1.5em;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+  border-radius: 10px;
+}
+.career__list.last {
+  display: block;
+}
+
+.flexbox {
+  display: flex;
+  width: 100%;
+}
+
+.date,
+.point {
+  width: 26%;
+  text-align: left;
+  padding: 0 1em 0 0;
+}
+
+.history {
+  text-align: left;
+}
+
+.accordion {
+  display: flex;
+  width: 100%;
+  position: relative;/*+マークの位置基準とするためrelative指定*/
+  cursor: pointer;
+}
+/* アイコンの＋と× */
+.accordion::before,
+.accordion::after{
   position: absolute;
-  width   : 30px;
-  height  : 2px ;
-  left    : 6px;
-  background : #7a6e66;
-  -webkit-transition: 0.3s ease-in-out;
-  -moz-transition   : 0.3s ease-in-out;
-  transition        : 0.3s ease-in-out;
+  content:'';
+  width: 15px;
+  height: 2px;
+  background-color: #555;
 }
-.hamburger span:nth-child(1) {
-  top: 10px;
+.accordion::before{
+  top:48%;
+  right: 15px;
+  transform: rotate(0deg);
 }
-.hamburger span:nth-child(2) {
-  top: 20px;
+.accordion::after{    
+  top:48%;
+  right: 15px;
+  transform: rotate(90deg);
 }
-.hamburger span:nth-child(3) {
-  top: 30px;
-}
-
-/* --- ナビ開いてる時のボタン --- */
-.hamburger.active span:nth-child(1) {
-  top : 16px;
-  left: 6px;
-  background :#7a6e66;
-  -webkit-transform: rotate(-45deg);
-  -moz-transform   : rotate(-45deg);
-  transform        : rotate(-45deg);
-}
-.hamburger.active span:nth-child(2),
-.hamburger.active span:nth-child(3) {
-  top: 16px;
-  background: #7a6e66;
-  -webkit-transform: rotate(45deg);
-  -moz-transform   : rotate(45deg);
-  transform        : rotate(45deg);
+/*　closeというクラスがついたら形状変化　*/
+.accordion.close::before{
+	transform: rotate(45deg);
 }
 
+.accordion.close::after{
+	transform: rotate(-45deg);
+}
 
+/* アコーディオンで現れるエリア */
+.accordion__hide {
+  display: none;/*最初は非表示*/
+  margin: 0;
+  padding: 3em 0 0;
+}
+
+.accordion__hide  > .flexbox {
+  margin: 0 0 2em;
+}
+
+.accordion__hide  > .flexbox:last-child {
+  margin: 0;
+}
+
+.history-web {
+  display: block;
+  padding: 0 0 0 1.3em;
+  width: 74%;
+  text-align: left;
+}
+
+/* --- work --- */
+#work {
+  background:#fafafa;
+}
+
+.work__list {
+  width: 90%;
+  display: flex;
+  margin: 0 auto 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.work__img {
+  margin: 0 2em 0 0;
+}
+
+.details {
+  width: 90%;
+  text-align: left;
+  padding: 0 0 0 1em;
+}
+
+.details__title {
+  font-weight: normal;
+}
+
+.details__desc {
+  margin: 1em 0 0;
+  padding: 0 0 0 .5em;
+}
+
+.details__desc a {
+  text-decoration: underline;
+}
+
+/*====================================================
+Tablet Smartphone　max-width:840px
+====================================================
+*/
+/* --- ヘッダー --- */
+@media screen and (max-width:840px) {
+
+  .global-nav {
+    display: none;
+  }
+
+  .global-nav__list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+  }
+
+  .global-nav__item:not(:last-child){
+    margin: 0 0 15px;
+  }
+
+  .global-nav__item-inner:after {
+    width: 0;
+    height: 0;
+    background-color: none;
+    transform: none;
+    transition: none;
+  }
+  .global-nav__item-inner:hover:after {
+    transform: none;
+  }
+
+  /* --- career --- */
+  .career__list {
+    width: 100%; 
+  }
+}
+
+
+/*====================================================
+Tablet Smartphone　max-width:768px
+====================================================
+*/
+@media screen and (max-width:768px) {
+
+  /* 共通パーツ
+
+  ====================================================*/
+  .pc-only {
+    display: none;
+  }
+  .sp-only{
+    display: block;
+  }
+
+  /* --- ヘッダー --- */
+  .site-header {
+    height: 60px;
+    padding: 17.5px 15px;
+  }
+
+  /* --- フッター --- */
+  .site-footer {
+    padding: 20px 0;
+  }
+
+  /* --- back to top ボタン --- */
+  #page-top {
+    right: 10px;
+    bottom: 75px;
+  }
+
+  /* --- work --- */
+  .work__list {
+    width: 100%;
+    display: block;
+  }
+
+  .details {
+    width: 100%;
+    padding: 0;
+    margin: 2em 0 0;
+}
+
+}
+
+/*====================================================
+applle Smartphone　max-width:428px
+====================================================
+*/
+@media screen and (max-width:428px) {
+  /* --- スマホで改行 --- */
+  .pc-only {
+    display: none;
+  }
+  .sp-only{
+    display: block;
+  }
+
+  /* --- Profile --- */
+  .profile__img {
+    width: 45%;
+  }
+
+  .profile__text {
+    width: 90%;
+  }
+
+  /* --- Career --- */
+  .flexbox {
+    display: block;
+  }
+
+  .date, 
+  .point {
+    width: 100%;
+    padding: 0;
+  }
+
+  .point {
+    margin: 0 0 .5em;
+  }
+
+  .accordion {
+    display: block;
+  }
+  .accordion::before {
+    top: 10px;
+  }
+  .accordion::after {
+    top: 10px;
+  }
+
+  .history-web {
+    width: 100%;
+  }
+
+  /* --- Work --- */
+  .work__list-item {
+    margin: 10px 10px 20px;
+  }
+
+}
